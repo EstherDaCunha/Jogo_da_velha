@@ -7,7 +7,6 @@ def menu():
     Pergunta ao jogador se ele deseja jogar ou sair, sendo 0 a opção de saída
     e a opção 1 como iniciar jogo.
     :return: None
-
     """
     iniciar = 1
     while iniciar:
@@ -19,9 +18,8 @@ def menu():
 
 def jogo():
     """
-    Define as posições das jogadas (linhas e colunas) e identifica o ganhador.     
+    Define as posições das jogadas (linhas e colunas) e identifica o ganhador.
     :return:None
-
     """
     jogada = 0 #Número de jogadas, +1 a cada rodada
 
@@ -44,12 +42,16 @@ def jogo():
             print("Jogador", jogada % 2 + 1, "Ganhou após", jogada+1, "rodadas")
         jogada += 1
 
+        if jogada > 8:
+            print("Velha")
+            break
+
+
 def ganhador():
     """
     Checa se alguma linha, coluna ou diagonal está completa, se sim, apresenta o resultado, caso não,
     as rodadas continuam
     :return: Int
-
     """
     #Checar linhas
     for i in range(3):
@@ -75,7 +77,6 @@ def tabuleiro():
     Impressão do rabuleiro, o jogador 1 tem as jogadas representadas por números positivos = 1 =X
     o jogador 2 é representado por números negativos = -1 = O
     :return: None
-
     """
     for i in range(3):
         for j in range(3):
