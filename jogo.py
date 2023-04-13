@@ -46,7 +46,6 @@ def jogo():
             print("Velha")
             break
 
-
 def ganhador():
     """
     Checa se alguma linha, coluna ou diagonal está completa, se sim, apresenta o resultado, caso não,
