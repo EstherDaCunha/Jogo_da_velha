@@ -19,8 +19,8 @@ def menu():
 
 def jogo():
     """
-
-    :return:
+    Define as posições das jogadas (linhas e colunas) e identifica o ganhador.     
+    :return:None
 
     """
     jogada = 0 #Número de jogadas, +1 a cada rodada
@@ -48,7 +48,7 @@ def ganhador():
     """
     Checa se alguma linha, coluna ou diagonal está completa, se sim, apresenta o resultado, caso não,
     as rodadas continuam
-    :return: None
+    :return: Int
 
     """
     #Checar linhas
