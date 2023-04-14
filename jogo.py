@@ -38,7 +38,7 @@ class jogo_velha:
 
     def jogo(self):
         """
-        Define as posições das jogadas (linhas e colunas) e identifica o ganhador.
+        Define as posições das jogadas (linhas e colunas) e identifica o jogador.
         :return:None
         """
         jogada = 0 #Número de jogadas, +1 a cada rodada
@@ -56,7 +56,7 @@ class jogo_velha:
                 else:
                     self.velha[linha-1][coluna-1] = -1
             else:
-                print("Não está vazio")
+                print("Está posição ja está preenchida, escolha outra")
                 jogada -= 1
 
             if self.ganhador():
